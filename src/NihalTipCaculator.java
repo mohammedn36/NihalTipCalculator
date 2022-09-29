@@ -15,7 +15,16 @@ public class NihalTipCaculator {
         int tipPercent = scan.nextInt();
         scan.nextLine(); //clears out string buffer
 
-        System.out.println("Apples: " + groupNumber);
-        System.out.println("Cost: " + tipPercent);
+        double num   = 0.0;
+        double total = 0.0;
+
+        while (num != -1) {
+            total += num; //adds the previous number
+            System.out.print("Enter a cost in dollars and cents (for example, 5.13): ");
+            num = scan.nextDouble();
+
+        System.out.println("Number of People in group: " + groupNumber);
+        System.out.println("Tip Percentage: " + tipPercent);
+
     }
 }
